@@ -1,6 +1,6 @@
 # HunterAI
 
-Minecraft'ta bir yapay zeka seni avlıyor. Kapıya ulaşmaya çalışırken yapay zeka seni izler, ne yaptığına bakıp oyun içi tuzaklar kurar ve ara sıra sesli konuşur. Üç canın var.
+Minecraft'ta bir yapay zeka seni avlıyor. Kapıya ulaşmaya çalışırken yapay zeka seni izler, ne yaptığına bakıp oyun içi tuzaklar kurar ve ara sıra sesli konuşur.
 
 Proje iki parçadan oluşur:
 
@@ -17,9 +17,8 @@ Bir YouTube videosu için yapıldı. Kod olduğu gibi paylaşılıyor: kendi sun
 | Paper sunucusu | 26.3 (plugin `paper-api:26.3.build.214-stable` ile derleniyor) |
 | JDK | 25 (hem derleme hem sunucu) |
 | Python | 3.11+ |
-| Gemini API anahtarı | Varsayılan LLM sağlayıcısı |
+| Bir LLM API anahtarı | Gemini, OpenAI (ChatGPT) veya Anthropic (Claude). Üçünden **biri** yeter, hepsi gerekmez |
 | ElevenLabs API anahtarı | İsteğe bağlı. Yoksa gerçek ses yerine sahte uğultu çalar |
-| Anthropic API anahtarı | İsteğe bağlı. Gemini yerine Claude kullanmak istersen |
 | Simple Voice Chat | İsteğe bağlı (`softdepend`). Sesin oyun içinde duyulması için |
 | İşletim sistemi | Betikler PowerShell (Windows). Linux/macOS'ta komutları elle çalıştır |
 
@@ -33,23 +32,33 @@ Anahtarlar **yalnızca** proje kökündeki `.env` dosyasına yazılır. Bu dosya
    Copy-Item .env.example .env
    ```
 
-2. Doldur:
+2. Kullanacağın yapay zekânın anahtarını doldur. **Hepsini doldurman gerekmez**, yalnızca seçtiğin sağlayıcınınkini yaz:
+
+   | Sağlayıcı | `.env` değişkeni | Anahtarı nereden alırsın |
+   | --- | --- | --- |
+   | Gemini (Google) | `GEMINI_API_KEY` | https://aistudio.google.com/apikey |
+   | OpenAI (ChatGPT) | `OPENAI_API_KEY` | https://platform.openai.com/api-keys |
+   | Anthropic (Claude) | `ANTHROPIC_API_KEY` | https://console.anthropic.com |
+   | ElevenLabs (ses, isteğe bağlı) | `ELEVENLABS_API_KEY` | https://elevenlabs.io |
+
+   Örnek `.env` (Gemini kullanan biri için):
 
    ```
-   GEMINI_API_KEY=...        # https://aistudio.google.com/apikey
-   ELEVENLABS_API_KEY=...    # https://elevenlabs.io (isteğe bağlı)
-   ANTHROPIC_API_KEY=...     # https://console.anthropic.com (isteğe bağlı)
+   GEMINI_API_KEY=buraya_anahtarin
+   ELEVENLABS_API_KEY=
    ```
 
-3. Sağlayıcıyı `config.yml` içindeki `beyin` bölümünden seç:
+3. Hangi yapay zekâyı kullanacağını `config.yml` içindeki `beyin` bölümünden seç. `saglayici` alanı ile `.env`'e yazdığın anahtar **aynı sağlayıcıya** ait olmalı:
 
    ```yaml
-   saglayici: gemini          # veya anthropic
-   model_duzenli: gemini-3.5-flash
-   model_agir: gemini-3.5-flash
+   saglayici: gemini          # gemini | openai | anthropic
+   model_duzenli: gemini-3.5-flash   # düzenli kararlar, hızlı/ucuz model
+   model_agir: gemini-3.5-flash      # ölüm raporu gibi ağır işler
    ```
 
-   `anthropic` seçersen iki model alanına da Claude model adını yaz.
+   Model alanlarına seçtiğin sağlayıcının model adını yaz. Örneğin `openai` için OpenAI'ın bir model adı, `anthropic` için bir Claude model adı. Anahtar boşsa beyin LLM'e hiç gitmez, rastgele "sahte" kararlarla çalışır (boru hattını denemek için). Anahtar var ama model adı yanlışsa LLM çağrısı hata verir ve yapay zeka o turda `bekle` kararı verir, yani oyunda hiçbir şey yapmaz. Bunu `/yz test beyin` ile kontrol et.
+
+   **ChatGPT dışında OpenAI uyumlu bir servis** (OpenRouter, Groq, yerel Ollama/LM Studio gibi) kullanmak için `saglayici: openai` yap, `openai_adres` alanına servisin adresini (ör. `https://openrouter.ai/api/v1`) yaz, anahtarı yine `OPENAI_API_KEY` olarak gir. Servis `response_format: json_object` ve `max_completion_tokens` alanlarını kabul etmeli.
 
 4. Ses için `config.yml` içindeki `elevenlabs.ses_id` alanına ElevenLabs ses kimliğini yaz. Anahtar boşsa veya `ses_id` `<` ile başlıyorsa gerçek ses üretilmez, sahte uğultu çalar. Oyun yine çalışır.
 
@@ -121,7 +130,9 @@ Loglar `veri/oyunlar/<tarih>/` altına düşer.
 
 Hepsi `config.yml` içinde: aşamalara göre tuzak dolum süresi ve aktif tuzak sayısı, can hakkı, tuzak mesafeleri, konuşma sayısı ve aralığı, figürün boyutu ve davranışı.
 
-`config.yml` üç yerde aynı olmalı: kökte, `plugin/src/main/resources/config.yml` ve `sunucu/plugins/YzTuzak/config.yml`. Plugin sunucu klasöründeki kopyayı okur.
+`config.yml` üç yerde aynı olmalı: kökte, `plugin/src/main/resources/config.yml` ve `sunucu/plugins/YzTuzak/config.yml`. Beyin servisi kökteki dosyayı, plugin sunucu klasöründeki kopyayı okur. `sunucu/plugins/YzTuzak/config.yml` plugin ilk açıldığında kendiliğinden oluşur. Ayarı değiştirirsen üçünü de güncelle.
+
+Varsayılan oyun can sınırsızdır (`can_hakki: 0`). Sınır koymak istersen sayıyı yaz.
 
 ## Spoiler kilidi
 

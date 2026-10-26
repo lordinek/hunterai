@@ -55,7 +55,8 @@ beyin:
   karar_zaman_asimi_sn: 60
   rapor_zaman_asimi_sn: 180
   ses_zaman_asimi_sn: 60
-  saglayici: gemini
+  saglayici: gemini       # gemini | openai | anthropic
+  openai_adres: https://api.openai.com/v1   # sadece saglayici: openai icin; OpenAI uyumlu baska servisin adresi de olur
   model_duzenli: gemini-3.5-flash
   model_agir: gemini-3.5-flash
   dusunme_butcesi: 0

@@ -12,6 +12,7 @@ import ayar
 import profil
 
 PROMPTLAR = pathlib.Path(__file__).parent / "prompts"
+ANAHTARLAR = {"gemini": "GEMINI_API_KEY", "openai": "OPENAI_API_KEY", "anthropic": "ANTHROPIC_API_KEY"}
 BEKLE = {
     "dusunce": "",
     "gozlemler": [],
@@ -105,7 +106,7 @@ class Beyin:
 
     def sahte_mi(self) -> bool:
         m = self.model_duzenli()
-        anahtar = "GEMINI_API_KEY" if self.saglayici() == "gemini" else "ANTHROPIC_API_KEY"
+        anahtar = ANAHTARLAR.get(self.saglayici(), "ANTHROPIC_API_KEY")
         return not os.environ.get(anahtar) or m.startswith("<") or not m
 
     def _gemini(self, model: str, sistem: str, mesajlar: list[dict], max_tokens: int) -> str:
@@ -127,9 +128,28 @@ class Beyin:
             cevap = json.loads(r.read().decode("utf-8"))
         return "".join(p.get("text", "") for p in cevap["candidates"][0]["content"].get("parts", []))
 
+    def _openai(self, model: str, sistem: str, mesajlar: list[dict], max_tokens: int) -> str:
+        """OpenAI ve OpenAI uyumlu servisler (chat completions). Adres: beyin.openai_adres."""
+        govde = {
+            "model": model,
+            "messages": [{"role": "system", "content": sistem}] + mesajlar,
+            "max_completion_tokens": max_tokens,
+            "response_format": {"type": "json_object"},
+        }
+        adres = str(self.cfg["beyin"].get("openai_adres", "https://api.openai.com/v1")).rstrip("/")
+        istek = urllib.request.Request(
+            f"{adres}/chat/completions",
+            data=json.dumps(govde).encode("utf-8"), method="POST",
+            headers={"Content-Type": "application/json", "Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}"})
+        with urllib.request.urlopen(istek, timeout=int(self.cfg["beyin"].get("karar_zaman_asimi_sn", 60))) as r:
+            cevap = json.loads(r.read().decode("utf-8"))
+        return cevap["choices"][0]["message"]["content"] or ""
+
     def _llm(self, model: str, sistem: str, mesajlar: list[dict], max_tokens: int = 1500) -> str:
         if self.saglayici() == "gemini":
             return self._gemini(model, sistem, mesajlar, max_tokens)
+        if self.saglayici() == "openai":
+            return self._openai(model, sistem, mesajlar, max_tokens)
         if self._istemci is None:
             import anthropic
             self._istemci = anthropic.Anthropic()
