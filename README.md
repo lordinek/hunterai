@@ -125,9 +125,7 @@ Hepsi `config.yml` içinde: aşamalara göre tuzak dolum süresi ve aktif tuzak 
 
 ## Spoiler kilidi
 
-Kendi videonu çekiyorsan `spoiler_kilidi: true` bırak. Kilit açıkken oyuncuya hiçbir tuzak bilgisi gösterilmez. Prompt dosyalarında tuzak listesi yoktur, katalog çalışma anında `tuzaklar/izinli_tarifler.json` dosyasından okunur. Oyun bitince `/yz spoiler ac` ile kilidi kaldır. Kurgu araçları ancak ondan sonra çalışır.
-
-Not: `plugin/` içindeki tuzak modülleri açık kaynak olduğu için kodu okuyan biri tuzakları görebilir. Oynayacaksan kodu okuma.
+`config.yml` içindeki `spoiler_kilidi: true` ayarı, oyun sırasında oyuncuya tuzak bilgisi gösterilmesini engeller. Oynayan kişi tuzakları bilmesin istiyorsan açık bırak. Oyun bitince `/yz spoiler ac` ile kilidi kaldır. Kurgu araçları ancak ondan sonra çalışır. Tuzak kataloğu `tuzaklar/izinli_tarifler.json` dosyasından okunur.
 
 ## Test
 
