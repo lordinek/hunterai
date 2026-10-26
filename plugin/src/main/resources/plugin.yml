@@ -1,0 +1,14 @@
+name: YzTuzak
+version: '${version}'
+main: yz.tuzak.YzPlugin
+api-version: '26.3'
+description: Yapay zeka tuzak plugin'i
+softdepend: [voicechat]
+commands:
+  yz:
+    description: Yapay zeka komutlari
+    usage: /yz <test beyin>
+    permission: yz.admin
+permissions:
+  yz.admin:
+    default: op

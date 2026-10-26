@@ -1,0 +1,740 @@
+{
+  "uretim_zamani": "2026-10-23T19:40:00.584872200Z",
+  "tarifler": [
+    {
+      "tetikleyici": "t_basinc",
+      "silah": "s_yukselen_zemin",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_basinc",
+      "silah": "s_gomulu_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_basinc",
+      "silah": "s_cukur_dusme",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_basinc",
+      "silah": "s_lav_cukuru",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_basinc",
+      "silah": "s_firlatma",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_basinc",
+      "silah": "s_magma_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_basinc",
+      "silah": "s_kafes",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_basinc",
+      "silah": "ornek_dispenser",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_ip",
+      "silah": "s_cukur_dusme",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_ip",
+      "silah": "s_lav_cukuru",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_ip",
+      "silah": "s_su_kuyusu",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL"
+      ]
+    },
+    {
+      "tetikleyici": "t_ip",
+      "silah": "ornek_dispenser",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_titresim",
+      "silah": "s_yukselen_zemin",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_titresim",
+      "silah": "s_gomulu_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_titresim",
+      "silah": "s_cukur_dusme",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_titresim",
+      "silah": "s_lav_cukuru",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_titresim",
+      "silah": "s_firlatma",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_titresim",
+      "silah": "s_magma_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_gozlem",
+      "silah": "s_yukselen_zemin",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_gozlem",
+      "silah": "s_gomulu_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_gozlem",
+      "silah": "s_firlatma",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_gozlem",
+      "silah": "s_magma_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_gozlem",
+      "silah": "ornek_dispenser",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_huni",
+      "silah": "s_yukselen_zemin",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_huni",
+      "silah": "s_gomulu_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_huni",
+      "silah": "s_cukur_dusme",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_huni",
+      "silah": "s_lav_cukuru",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_huni",
+      "silah": "s_su_kuyusu",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL"
+      ]
+    },
+    {
+      "tetikleyici": "t_huni",
+      "silah": "s_firlatma",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_huni",
+      "silah": "s_magma_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_huni",
+      "silah": "ornek_dispenser",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_hedef",
+      "silah": "s_yukselen_zemin",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_hedef",
+      "silah": "s_gomulu_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_hedef",
+      "silah": "s_cukur_dusme",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_hedef",
+      "silah": "s_lav_cukuru",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_hedef",
+      "silah": "s_su_kuyusu",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL"
+      ]
+    },
+    {
+      "tetikleyici": "t_hedef",
+      "silah": "s_firlatma",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_hedef",
+      "silah": "s_magma_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_hedef",
+      "silah": "ornek_dispenser",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kol",
+      "silah": "s_yukselen_zemin",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kol",
+      "silah": "s_gomulu_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kol",
+      "silah": "s_cukur_dusme",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kol",
+      "silah": "s_lav_cukuru",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kol",
+      "silah": "s_su_kuyusu",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL"
+      ]
+    },
+    {
+      "tetikleyici": "t_kol",
+      "silah": "s_firlatma",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kol",
+      "silah": "s_magma_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kol",
+      "silah": "s_kafes",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kol",
+      "silah": "ornek_dispenser",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kitap",
+      "silah": "s_yukselen_zemin",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kitap",
+      "silah": "s_gomulu_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kitap",
+      "silah": "s_cukur_dusme",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kitap",
+      "silah": "s_lav_cukuru",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kitap",
+      "silah": "s_su_kuyusu",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL"
+      ]
+    },
+    {
+      "tetikleyici": "t_kitap",
+      "silah": "s_firlatma",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kitap",
+      "silah": "s_magma_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kitap",
+      "silah": "s_kafes",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_kitap",
+      "silah": "ornek_dispenser",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "ornek_plaka",
+      "silah": "s_yukselen_zemin",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "ornek_plaka",
+      "silah": "s_gomulu_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "ornek_plaka",
+      "silah": "s_lav_cukuru",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "ornek_plaka",
+      "silah": "s_su_kuyusu",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL"
+      ]
+    },
+    {
+      "tetikleyici": "ornek_plaka",
+      "silah": "s_firlatma",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "ornek_plaka",
+      "silah": "s_magma_bomba",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "ornek_plaka",
+      "silah": "s_kafes",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "ornek_plaka",
+      "silah": "ornek_dispenser",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "fizik": "ornek_cokme",
+      "araziler": [
+        "DUZ",
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_basinc",
+      "silah": "s_su_kuyusu",
+      "araziler": [
+        "MAGARA",
+        "TUNEL"
+      ]
+    },
+    {
+      "tetikleyici": "t_titresim",
+      "silah": "s_su_kuyusu",
+      "araziler": [
+        "MAGARA",
+        "TUNEL"
+      ]
+    },
+    {
+      "tetikleyici": "t_titresim",
+      "silah": "ornek_dispenser",
+      "araziler": [
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_gozlem",
+      "silah": "s_kafes",
+      "araziler": [
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_huni",
+      "silah": "s_kafes",
+      "araziler": [
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_hedef",
+      "silah": "s_kafes",
+      "araziler": [
+        "MAGARA",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "ornek_plaka",
+      "silah": "s_cukur_dusme",
+      "araziler": [
+        "MAGARA",
+        "TUNEL",
+        "NETHER"
+      ]
+    },
+    {
+      "tetikleyici": "t_ip",
+      "silah": "s_yukselen_zemin",
+      "araziler": [
+        "TUNEL"
+      ]
+    },
+    {
+      "tetikleyici": "t_ip",
+      "silah": "s_gomulu_bomba",
+      "araziler": [
+        "TUNEL"
+      ]
+    },
+    {
+      "tetikleyici": "t_ip",
+      "silah": "s_magma_bomba",
+      "araziler": [
+        "TUNEL"
+      ]
+    },
+    {
+      "tetikleyici": "t_ip",
+      "silah": "s_kafes",
+      "araziler": [
+        "TUNEL"
+      ]
+    },
+    {
+      "tetikleyici": "t_titresim",
+      "silah": "s_kafes",
+      "araziler": [
+        "TUNEL"
+      ]
+    }
+  ]
+}

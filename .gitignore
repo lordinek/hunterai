@@ -1,0 +1,9 @@
+.env
+sunucu/
+veri/
+veri_arsiv/
+tuzaklar/test_sonuclari/
+plugin/.gradle/
+plugin/build/
+beyin/.venv/
+__pycache__/

@@ -1,0 +1,285 @@
+spoiler_kilidi: true
+veri_klasoru: ../veri
+tuzaklar_klasoru: ../tuzaklar
+min_mesafe: 40
+maks_kablo: 24
+gomulme_orani: 0.8
+maks_mesafe: 120
+dusunme_araligi_sn: 50
+can_hakki: 0            # 0: can siniri yok
+asamalar:
+  overworld_erken:   { dolum_dk: 6, maks_aktif: 3 }
+  overworld_hazirlik: { dolum_dk: 4, maks_aktif: 4 }
+  nether:            { dolum_dk: 3, maks_aktif: 5 }
+  stronghold:        { dolum_dk: 2, maks_aktif: 6 }
+maks_biriken_hak: 3
+yasak_suresi_dk: 20
+konusma:
+  toplam: 40
+  min_aralik_dk: 2
+  tanitim_metni: "Seni izliyorum, Ali. Çok uzakta bir kapı var. Oraya ulaşırsan kurtulursun. Ulaşamayacaksın."
+  altyazi_sn_karakter: 0.07
+  altyazi_min_sn: 3
+  ses_kazanci: 1.0
+varlik:
+  mod: resim            # resim: yapay zeka cizimi (kaynak paketi gerekir), blok: BlockDisplay silueti
+  resim_yukseklik: 90
+  resim_govde_isik: 5
+  yukseklik: 45
+  ileri: 100
+  olcek: 34
+  guncelleme_tik: 2
+  yumusatma_tik: 3
+  gorus_menzili: 16
+  yon_yumusatma: 0.03
+  salinim_hizi: 1.2
+  salinim_genlik: 1.5
+  durus_egimi: 8
+  piksel_gorunurluk: 0.35
+  egil_tik: 80
+  egil_aci: 30
+  glitch_tik: 8
+  glitch_kayma: 6
+  isaret_tik: 70
+  isaret_aralik_sn: [45, 150]
+  glitch_aralik_sn: [25, 80]
+  nether:
+    y: 45
+    ileri: 100
+  end:
+    yukseklik: 40
+    ileri: 100
+beyin:
+  url: http://127.0.0.1:8765
+  zaman_asimi_sn: 5
+  karar_zaman_asimi_sn: 60
+  rapor_zaman_asimi_sn: 180
+  ses_zaman_asimi_sn: 60
+  saglayici: gemini
+  model_duzenli: gemini-3.5-flash
+  model_agir: gemini-3.5-flash
+  dusunme_butcesi: 0
+elevenlabs:
+  ses_id: nPczCjzI2devNBz1zQrb   # Brian: derin, yankili
+  model_id: eleven_multilingual_v2
+  ses_ayarlari:
+    stability: 1.0
+    similarity_boost: 0.4
+    style: 0.0
+    use_speaker_boost: false
+    speed: 0.92
+  efekt:
+    perde: 0.80
+    halka_hz: 55
+    halka_karisim: 0.6
+    bit_ezme: 4
+    yanki_ms: 35
+    yanki_karisim: 0.5
+gozlem:
+  konum_aralik_sn: 1
+  pencere_sn: 120
+  rota_nokta_sn: 10
+  rota_pencere_sn: 180
+  metrik_log_sn: 60
+  yere_bakma_pitch: 60
+  hareket_esigi: 0.3
+  dusuk_can_esigi: 6
+  dusuk_can_gozlem_sn: 10
+  olay_debounce_sn: 30
+  portal_yaricap: 128
+  ender_gozu_yaricap: 16
+  yapi_tarama_sn: 5
+  cevher_bakis_mesafe: 24
+  geri_donus_mesafe: 5
+  geri_donus_min_yas_sn: 90
+  sandik_kirma_yaricap: 5
+  sandik_kirma_pencere_sn: 20
+  kritik_esyalar:
+    - DIAMOND
+    - IRON_HELMET
+    - IRON_CHESTPLATE
+    - IRON_LEGGINGS
+    - IRON_BOOTS
+    - DIAMOND_HELMET
+    - DIAMOND_CHESTPLATE
+    - DIAMOND_LEGGINGS
+    - DIAMOND_BOOTS
+    - DIAMOND_PICKAXE
+    - DIAMOND_SWORD
+    - BUCKET
+    - WATER_BUCKET
+    - LAVA_BUCKET
+    - SHIELD
+    - FLINT_AND_STEEL
+    - ENDER_PEARL
+    - ENDER_EYE
+    - BLAZE_ROD
+    - BLAZE_POWDER
+    - OBSIDIAN
+    - ANCIENT_DEBRIS
+    - NETHERITE_INGOT
+  degerli_cevherler:
+    - DIAMOND_ORE
+    - DEEPSLATE_DIAMOND_ORE
+    - EMERALD_ORE
+    - DEEPSLATE_EMERALD_ORE
+    - GOLD_ORE
+    - DEEPSLATE_GOLD_ORE
+    - NETHER_GOLD_ORE
+    - ANCIENT_DEBRIS
+  sandik_tipleri:
+    - CHEST
+    - TRAPPED_CHEST
+    - BARREL
+  yapi_olaylari:
+    - "minecraft:nether/find_fortress"
+    - "minecraft:nether/find_bastion"
+    - "minecraft:story/follow_ender_eye"
+aday:
+  adet: 6
+  deneme: 80
+  yuruyus_konisi_derece: 50
+  gorus_acisi_derece: 120
+  ayrim_mesafe: 15
+  maks_ayni_tur: 2
+  aktif_tuzak_min_mesafe: 20
+  yapi_tarama_yaricap_chunk: 12
+  yapi_ornek: 12
+  cevher_ornek: 300
+  kolon_ust: 5
+  kolon_alt: 40
+  kolon_pencere: 8
+  gosterim_sn: 60
+  gosterim_sutun_boy: 12
+  agirlik:
+    yuruyus_yonu: 0.5
+    yapi: 0.8
+    cevher_damari: 0.7
+    sandik: 0.7
+    portal: 0.7
+    yatak: 0.6
+  skor_yon: 0.5
+  skor_mesafe: 0.2
+  skor_tur: 0.3
+tuzak:
+  ornek_moduller: true
+  ornek_goster: true
+  etki_yaricap: 3
+  etki_dy_alt: 6
+  etki_dy_ust: 2
+  silah_deneme: 300
+  kablo_node_siniri: 20000
+  kablo_tekrarlayici_aralik: 13
+  gorus_mesafeleri: [2, 4, 8, 14]
+  goz_yuksekligi: 1.62
+  yuz_ornek: 0.45
+  yem_min_mesafe: 6
+  yem_maks_mesafe: 12
+  teknik_bloklar:
+    - DISPENSER
+    - DROPPER
+    - PISTON
+    - STICKY_PISTON
+    - TNT
+    - REDSTONE_WIRE
+    - REPEATER
+    - COMPARATOR
+    - OBSERVER
+    - REDSTONE_BLOCK
+    - REDSTONE_TORCH
+    - REDSTONE_WALL_TORCH
+    - HOPPER
+    - LEVER
+  test:
+    paralel: 8
+    bekleme_erken_tik: 40
+    bekleme_tetik_tik: 120
+    arazi_yaricap: 16
+    arazi_yukseklik: 40
+    dunya_oneki: yz_test_
+izleme:
+  yakin_mesafe: 12
+  bakis_mesafe: 20
+  bakis_acisi_derece: 15
+  uzaklasma_mesafe: 3
+  yavaslama_orani: 0.5
+  yon_degisimi_derece: 60
+  hiz_esigi: 0.3
+  gecmis_ornek: 6
+  kil_payi_bekleme_sn: 5
+  kil_payi_mesafe: 20
+  patlama_yaricap: 8
+mudahale:
+  can_esik: 0            # 0: can siniri yok
+  faz1_olum: 5           # ilk bu kadar olum: her sey serbest; sonra alta lav ve alta cukur yasak
+  min_erisim: 30         # duvardan sonra Ali'nin erisebildigi hucre alt siniri (cep olmasin)
+  agir_aralik_sn: 50     # agir cesitler (duvar/mob_sel/cukur/yagmur/lav) arasi en az sure
+  duvar:   { maks: 4, bekleme_sn: 150, mesafe: 9, yan_maks: 500, yukseklik: 30, sutun_tik: 8 }
+  mob_sel: { maks: 4, bekleme_sn: 125, adet: 20, omur_sn: 120 }
+  it:      { maks: 4, bekleme_sn: 165 }
+  cukur:   { maks: 3, bekleme_sn: 330, tetik_mesafe: 10, omur_sn: 240, sutun_tik: 32, bedrock_kaz: true }
+  yagmur:  { maks: 4, bekleme_sn: 150, ors: 12 }
+  lav:     { maks: 4, bekleme_sn: 125, yaricap: 2, omur_sn: 8 }
+  isinla:  { maks: 4, bekleme_sn: 125, min_mesafe: 20, maks_mesafe: 40 }
+  karanlik: { maks: 3, bekleme_sn: 250, sure_sn: 30 }
+  kistir:  { maks: 4, bekleme_sn: 165, mesafe: 4, kalinlik: 3, adet: 12, omur_sn: 120 }
+dusunme:
+  min_aralik_sn: 10
+  son_olay_adet: 15
+  son_tarif_hafiza: 3
+  tetikleyici_olaylar:
+    - dunya_degisti
+    - portal_yakildi
+    - ender_gozu_firlatildi
+    - yapi_kesfi
+    - yapi_yakin
+    - kritik_esya
+    - tuzak_fark_edildi
+    - kil_payi
+    - dusuk_can
+    - portal_yakin
+    - olum
+  yapi_tetikleyici:
+    - village
+    - fortress
+    - bastion
+    - stronghold
+    - mansion
+    - monument
+    - outpost
+    - ruined_portal
+    - ancient_city
+    - trial
+butce:
+  hazirlik_esyalari:
+    - IRON_HELMET
+    - IRON_CHESTPLATE
+    - IRON_LEGGINGS
+    - IRON_BOOTS
+    - DIAMOND
+can:
+  olum_baslik: "Seni öldürdüm."
+  baslik_giris_ms: 300
+  baslik_sure_ms: 3500
+  baslik_cikis_ms: 1000
+  zorla_dogus_sn: 4
+kapanis:
+  yenilgi_metni: "Kapıdan geçtin, Ali. Bu sefer sen kazandın. Ama seni izlemeyi bırakmayacağım."
+  ejderha_bekleme_sn: 15
+  rapor_bekleme_sn: 90
+  dunya_yedegi: true
+isaret:
+  flas_tik: 4
+savas:
+  mesafe: 18             # yaratik Ali'nin kac blok onunde dogar
+  can: 250
+  olcek: 3.0             # boy carpani (Ravager ~2.2 blok x 3)
+  hasar: 10
+kurtulus:
+  mesafe: 1800           # spawn'dan portala dogru mesafe (blok)
+  sapma: 300             # +/- rastgele sapma
+  yaricap: 7             # portal platformunun yaricapi
+  sabit_aktif: false     # true: yeni portal kurma, asagidaki mevcut portali hedef al
+  sabit_x: 0
+  sabit_y: 64
+  sabit_z: 0

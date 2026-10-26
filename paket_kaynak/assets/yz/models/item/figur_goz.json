@@ -1,0 +1,40 @@
+{
+  "textures": {
+    "particle": "yz:item/figur_goz",
+    "0": "yz:item/figur_goz"
+  },
+  "elements": [
+    {
+      "from": [
+        -8,
+        -16,
+        8.15
+      ],
+      "to": [
+        24,
+        16,
+        8.15
+      ],
+      "faces": {
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0"
+        },
+        "north": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ]
+}
