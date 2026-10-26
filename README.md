@@ -1,6 +1,6 @@
 # HunterAI
 
-Minecraft'ta bir yapay zeka seni avlıyor. Ejderhaya ulaşmaya çalışırken yapay zeka seni izler, ne yaptığına bakıp oyun içi tuzaklar kurar ve ara sıra sesli konuşur. Üç canın var.
+Minecraft'ta bir yapay zeka seni avlıyor. Kapıya ulaşmaya çalışırken yapay zeka seni izler, ne yaptığına bakıp oyun içi tuzaklar kurar ve ara sıra sesli konuşur. Üç canın var.
 
 Proje iki parçadan oluşur:
 
